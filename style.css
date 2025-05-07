@@ -202,8 +202,7 @@ hr {
         background-color: #1F1F1F;
         display: none;
     }
-    @media (max-width: 991px) {
-        .header-txt h1 {
+       .header-txt h1 {
           font-size: 10vw;
         }
       
@@ -229,7 +228,7 @@ hr {
         }
       }
       
-      @media (max-width: 600px) {
+@media (max-width: 600px) {
         .btn-1 {
           font-size: 0.9rem;
           padding: 8px 20px;
