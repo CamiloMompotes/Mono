@@ -17,6 +17,8 @@ body {
 .container {
     max-width: 1200px; 
     margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
 }
 .header {
     background-image: url(imagenes/f3.webp);
@@ -38,7 +40,7 @@ body {
     z-index: 1000;
 }
 .logo {
-    font-size: 100x;
+    font-size: 100px;
     color: #CF2D3A;
     font-weight: 800;
     text-transform: uppercase;    
@@ -53,7 +55,7 @@ body {
     color: #FFFFFF;
     display: block;
 }
-.menu.navbar ul li a:hover {    
+.menu .navbar ul li a:hover {    
     color: #CF2D3A;
 }
 #menu {
@@ -68,7 +70,7 @@ body {
 }
 .header-txt{
     text-align: center;
-    margin-bottom: 45 pxs;
+    margin-bottom: 45px;
 }
 .header-txt h1, span, h3 {
     font-size: 110px;
@@ -119,7 +121,7 @@ body {
     display: flex;
 }
 .welcome-1 {
-    background-image: url(imagenes/);
+    background-image: url(imagenes/f0.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -200,6 +202,52 @@ hr {
         background-color: #1F1F1F;
         display: none;
     }
+    @media (max-width: 991px) {
+        .header-txt h1 {
+          font-size: 10vw;
+        }
+      
+        .welcome {
+          flex-direction: column;
+        }
+      
+        .welcome-1,
+        .welcome-2 {
+          width: 100%;
+        }
+      
+        .welcome-2 {
+          padding: 30px;
+        }
+      
+        .services-group {
+          flex-direction: column;
+        }
+      
+        .services-1 {
+          flex: 1 1 100%;
+        }
+      }
+      
+      @media (max-width: 600px) {
+        .btn-1 {
+          font-size: 0.9rem;
+          padding: 8px 20px;
+        }
+      
+        .welcome-2 h2,
+        .services h2 {
+          font-size: 2.2rem;
+        }
+      
+        .header-txt p {
+          font-size: 1rem;
+          padding: 0 10px;
+        }
+      
+        .services-group {
+          gap: 20px;
+        }
     .menu.navbar ul li{
         width: 100%;
     }
@@ -207,7 +255,7 @@ hr {
         display: initial;
     }
     .header{
-        min-height: 0hv;
+        min-height: 0vh;
     }
     .header-content{
         padding: 80px 30px 50px 30px;
@@ -223,7 +271,7 @@ hr {
         margin: 15px 0;
     }
     .header-dir{
-        flex-direction: colum;
+        flex-direction: column  ;
     }
     .dir p{
         font-size: 18px;
