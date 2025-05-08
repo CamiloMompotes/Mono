@@ -201,7 +201,56 @@ hr {
         right: 0;
         background-color: #1F1F1F;
         display: none;
+<<<<<<< HEAD
     }    
+=======
+    }
+       .header-txt h1 {
+          font-size: 10vw;
+        }
+      
+        .welcome {
+          flex-direction: column;
+        }
+      
+        .welcome-1,
+        .welcome-2 {
+          width: 100%;
+        }
+      
+        .welcome-2 {
+          padding: 30px;
+        }
+      
+        .services-group {
+          flex-direction: column;
+        }
+      
+        .services-1 {
+          flex: 1 1 100%;
+        }
+      }
+      
+@media (max-width: 600px) {
+        .btn-1 {
+          font-size: 0.9rem;
+          padding: 8px 20px;
+        }
+      
+        .welcome-2 h2,
+        .services h2 {
+          font-size: 2.2rem;
+        }
+      
+        .header-txt p {
+          font-size: 1rem;
+          padding: 0 10px;
+        }
+      
+        .services-group {
+          gap: 20px;
+        }
+>>>>>>> e7d3f1165d5258545ea319349ace207433065bb9
     .menu.navbar ul li{
         width: 100%;
     }
