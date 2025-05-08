@@ -13,6 +13,8 @@
 body { 
     font-family: "Poppins", sans-serif;
     background-color: #1F1F1F;
+    width: 100%;
+    overflow-x: hidden;    
 } 
 .container {
     max-width: 1200px; 
@@ -38,12 +40,15 @@ body {
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
+}    
+.logo img {
+    width: 100px; /* Ajusta el tamaño según tu imagen */
+    height: auto; /* Mantiene la proporción */
+    object-fit: contain; /* Evita distorsión */
 }
-.logo {
-    font-size: 10px;
-    color: #CF2D3A;
-    font-weight: 800;
-    text-transform: uppercase;    
+/* Opcional: Si quieres un hover effect */
+.logo img:hover {
+    opacity: 0.8;
 }
 .menu .navbar ul li {
     position: relative;
@@ -201,35 +206,32 @@ hr {
         right: 0;
         background-color: #1F1F1F;
         display: none;
-<<<<<<< HEAD
     }    
-=======
-    }
-       .header-txt h1 {
-          font-size: 10vw;
-        }
-      
-        .welcome {
-          flex-direction: column;
-        }
-      
-        .welcome-1,
-        .welcome-2 {
-          width: 100%;
-        }
-      
-        .welcome-2 {
-          padding: 30px;
-        }
-      
-        .services-group {
-          flex-direction: column;
-        }
-      
-        .services-1 {
-          flex: 1 1 100%;
-        }
+    .header-txt h1 {
+        font-size: 10vw;
       }
+    
+      .welcome {
+        flex-direction: column;
+      }
+    
+      .welcome-1,
+      .welcome-2 {
+        width: 100%;
+      }
+    
+      .welcome-2 {
+        padding: 30px;
+      }
+    
+      .services-group {
+        flex-direction: column;
+      }
+    
+      .services-1 {
+        flex: 1 1 100%;
+      }
+    }       
       
 @media (max-width: 600px) {
         .btn-1 {
@@ -250,7 +252,6 @@ hr {
         .services-group {
           gap: 20px;
         }
->>>>>>> e7d3f1165d5258545ea319349ace207433065bb9
     .menu.navbar ul li{
         width: 100%;
     }
@@ -403,7 +404,7 @@ hr {
     }  
 }
 @media (min-width: 991px) {
-    
+
     .header-txt h1 {
       font-size: 15vw;
     }
