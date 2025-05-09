@@ -209,224 +209,171 @@ hr {
     }    
     .header-txt h1 {
         font-size: 10vw;
-      }
-    
-      .welcome {
-        flex-direction: column;
-      }
-    
-      .welcome-1,
-      .welcome-2 {
-        width: 100%;
-      }
-    
-      .welcome-2 {
-        padding: 30px;
-      }
-    
-      .services-group {
-        flex-direction: column;
-      }
-    
-      .services-1 {
-        flex: 1 1 100%;
-      }
-    }       
-      
-@media (max-width: 600px) {
-        .btn-1 {
-          font-size: 0.9rem;
-          padding: 8px 20px;
-        }
-      
-        .welcome-2 h2,
-        .services h2 {
-          font-size: 2.2rem;
-        }
-      
-        .header-txt p {
-          font-size: 1rem;
-          padding: 0 10px;
-        }
-      
-        .services-group {
-          gap: 20px;
-        }
-    .menu.navbar ul li{
-        width: 100%;
     }
-    #menu:checked~.navbar{
-        display: initial;
-    }
-    .header{
-        min-height: 0vh;
-    }
-    .header-content{
-        padding: 80px 30px 50px 30px;
-    }
-    .header-txt{
-        margin-bottom: 15px;
-    }
-    .header-txt h1{
-        font-size: 90px;
-    }
-    .header-txt p{
-        padding: 0;
-        margin: 15px 0;
-    }
-    .header-dir{
-        flex-direction: column  ;
-    }
-    .dir p{
-        font-size: 18px;
-    }
-    .welcome{
-        flex-direction: column;
-    }
-    .welcome-1{
-        display: none;
-    }
-    .welcome-2{
-        width: 100%;
-        padding: 30px;
-        text-align: center;
-    }
-    h2{
-        font-size: 70px;
-        line-height: 80px;
-    }
-    p{
-        margin: 15px 0;
-    }
-    .services{
-        padding: 30px;
-    }
-    .services-txt p{
-        padding: 0;
-    }
-    .services-group{
-        flex-direction: column;
-        margin: 0;
-    }
-    .services-1{
-        margin: 0 0 20px 0;
-    }
-    .footer {
-        background-color: #111;
-        color: #fff;
-        text-align: center;
-        padding: 20px 0;
-    }
-    
-    .footer a {
-        color: #ccc;
-        text-decoration: none;
-        margin: 0 10px;
-    }
-    
-    .footer a:hover {
-        color: #fff;
-    }  
-    .menu.navbar ul li{
-        width: 100%;
-    }
-    #menu:checked~.navbar{
-        display: initial;
-    }
-    .header{
-        min-height: 0vh;
-    }
-    .header-content{
-        padding: 80px 30px 50px 30px;
-    }
-    .header-txt{
-        margin-bottom: 15px;
-    }
-    .header-txt h1{
-        font-size: 90px;
-    }
-    .header-txt p{
-        padding: 0;
-        margin: 15px 0;
-    }
-    .header-dir{
-        flex-direction: column  ;
-    }
-    .dir p{
-        font-size: 18px;
-    }
-    .welcome{
-        flex-direction: column;
-    }
-    .welcome-1{
-        display: none;
-    }
-    .welcome-2{
-        width: 100%;
-        padding: 30px;
-        text-align: center;
-    }
-    h2{
-        font-size: 70px;
-        line-height: 80px;
-    }
-    p{
-        margin: 15px 0;
-    }
-    .services{
-        padding: 30px;
-    }
-    .services-txt p{
-        padding: 0;
-    }
-    .services-group{
-        flex-direction: column;
-        margin: 0;
-    }
-    .services-1{
-        margin: 0 0 20px 0;
-    }
-    .footer {
-        background-color: #111;
-        color: #fff;
-        text-align: center;
-        padding: 20px 0;
-    }
-    
-    .footer a {
-        color: #ccc;
-        text-decoration: none;
-        margin: 0 10px;
-    }
-    
-    .footer a:hover {
-        color: #fff;
-    }  
-}
-@media (min-width: 991px) {
-
-    .header-txt h1 {
-      font-size: 15vw;
-    }
-      
     .welcome {
-      flex-direction: column;
+        flex-direction: column;
     }
-      
-    .welcome-1,
+    .welcome-1{
+        display: none;
+    }
+    .welcome-2{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
     .welcome-2 {
-      width: 100%;
+        padding: 30px;
     }
-      
-    .welcome-2 {
-      padding: 100px 50px;
-    }
-      
     .services-group {
-      flex-direction: column;
+        flex-direction: column;
     }
-      
     .services-1 {
-      flex: 1 1 100%;
+        flex: 1 1 100%;
+    }       
+    .menu.navbar ul li{
+        width: 100%;
     }
+    #menu:checked~.navbar{
+        display: initial;
+    }
+    .header{
+        min-height: 0vh;
+    }
+    .header-content{
+        padding: 80px 30px 50px 30px;
+    }
+    .header-txt{
+        margin-bottom: 15px;
+    }
+    .header-txt h1{
+        font-size: 90px;
+    }
+    .header-txt p{
+        padding: 0;
+        margin: 15px 0;
+    }
+    .header-dir{
+        flex-direction: column  ;
+    }
+    .dir p{
+        font-size: 18px;
+    }
+    .welcome{
+        flex-direction: column;
+    }
+    .welcome-1{
+        display: none;
+    }
+    .welcome-2{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+    h2{
+        font-size: 70px;
+        line-height: 80px;
+    }
+    p{
+        margin: 15px 0;
+    }
+    .services{
+        padding: 30px;
+    }
+    .services-txt p{
+        padding: 0;
+    }
+    .services-group{
+        flex-direction: column;
+        margin: 0;
+    }
+    .services-1{
+        margin: 0 0 20px 0;
+    }
+    .footer {
+        background-color: #111;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .footer a {
+        color: #ccc;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    .footer a:hover {
+        color: #fff;
+    }  
+    .menu.navbar ul li{
+        width: 100%;
+    }
+    #menu:checked~.navbar{
+        display: initial;
+    }
+    .header{
+        min-height: 0vh;
+    }
+    .header-content{
+        padding: 80px 30px 50px 30px;
+    }
+    .header-txt{
+        margin-bottom: 15px;
+    }
+    .header-txt h1{
+        font-size: 90px;
+    }
+    .header-txt p{
+        padding: 0;
+        margin: 15px 0;
+    }
+    .header-dir{
+        flex-direction: column  ;
+    }
+    .dir p{
+        font-size: 18px;
+    }
+    .welcome{
+        flex-direction: column;
+    }
+    .welcome-1{
+        display: none;
+    }
+    .welcome-2{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+    h2{
+        font-size: 70px;
+        line-height: 80px;
+    }
+    p{
+        margin: 15px 0;
+    }
+    .services{
+        padding: 30px;
+    }
+    .services-txt p{
+        padding: 0;
+    }
+    .services-group{
+        flex-direction: column;
+        margin: 0;
+    }
+    .services-1{
+        margin: 0 0 20px 0;
+    }
+    .footer {
+        background-color: #111;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .footer a {
+        color: #ccc;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    .footer a:hover {
+        color: #fff;
+    }  
 }
