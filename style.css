@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+DK+Loopet:wght@100..400&family=Poppins:wght@400;500;700;800&display=swap');
  /* font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;*/
@@ -12,7 +13,7 @@
   }
 body { 
     font-family: "Poppins", sans-serif;
-    background-color: #1F1F1F;
+    background-color: #807d7d;
     width: 100%;
     overflow-x: hidden;    
 } 
@@ -22,14 +23,35 @@ body {
     width: 100%;
     padding: 0 20px;
 }
+
 .header {
-    background-image: url(imagenes/f3.webp);
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
     min-height: 100vh;
     display: flex;
     align-items: center;
+}
+  
+/* Capa difuminada */
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    background-size: cover;
+    background-image: url(imagenes/f9.jpeg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    filter: blur(5px); /* Intensidad del desenfoque */
+    z-index: -1; /* Para que el contenido quede encima */
+}
+/* Asegúrate de que el contenido esté por encima */
+.header h2 {
+    position: relative;
+    z-index: 1;
+    color: white;
 }
 .menu {
     position: absolute;
@@ -57,11 +79,11 @@ body {
 .menu .navbar ul li a {
     font-size: 20px;
     padding: 22px;
-    color: #FFFFFF;
+    color: #dd1a1a;
     display: block;
 }
 .menu .navbar ul li a:hover {    
-    color: #CF2D3A;
+    color: #290dca;
 }
 #menu {
     display: none;
@@ -82,22 +104,22 @@ body {
     letter-spacing: 5px;
     text-transform: uppercase;
     font-family:'Bebas Neue', cursive;
-    color: #CF2D3A;
+    color: #e70e0e;
     margin-bottom: 15px;
 }
 .header-txt span {
     font-size: 25px;
 }
 .header-txt p {
-    color: #AFAFAF;
+    color: #ffffff;
     padding: 0 250px;
     margin: 25px 0;
 }
 .btn-1 {
     display: inline-block;
     padding: 11px 25px ;
-    background-color: #D82E37;
-    color: #ffffff;
+    background-color: #6d0e13;
+    color: #db0808;
     text-transform: uppercase;
     letter-spacing: 2px ;
     font-size: 20px;
@@ -106,7 +128,7 @@ body {
     border: 0;
 }
 .btn-1:hover {
-    background-color: #B4272E;
+    background-color: #cf111a;
 } 
 .header-dir {
     display: flex;
@@ -119,7 +141,7 @@ body {
 }
 .dir p {
     font-size: 22px;
-    color: #ffffff;
+    color: #080bdb;
     text-transform: uppercase;
 }
 .welcome {
@@ -135,7 +157,7 @@ body {
 .welcome-2 {
     width: 50%;
     padding: 150px 250px 150px 100px;
-    background-color: #191919;
+    background-color: #3A3939;
 }
 h2 {
     font-size: 90px;
@@ -153,11 +175,11 @@ p {
 .b1 {
     color: #CF2D3A;
 }
-.services {
+.service {
     padding: 100px 0;
     text-align: center;
 }
-.services-txt {
+.service-txt {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -166,29 +188,59 @@ hr {
     border: 1px solid #CF2D3A;
     width: 80px;
 }
-.services-txt p {
+.service-txt p {
     padding: 50px 150px;
 }
-.services-group {
+.service-group {
     display: flex;
     justify-content: space-between;
     margin: 45px 0;
 }
-.services-1 {
-    background-color: #070707;
+.service-1 {
+    background-color: #3a3939;
     padding: 35px 25px;
     margin: 0 10px;
     border-radius: 15px;
 }
-.services-1 img {
-    width: 25px;
+.service-1 img {
     margin-bottom: 15px;
+    width: auto;
+    height: 300px;
+    object-fit: contain; /* Recorta la imagen sin distorsión */
+    border-radius: 50%; /* Ejemplo: forma circular */
+    transition: 0.3s; /* Animación suave al pasar el mouse */
+    border: 3px solid #383636; /* Borde rojo */
+    box-shadow: 0 4px 8px rgba(153, 116, 116, 0.2); /* Sombra */
 }
-.services-1 h3 {
+.service-1 h3 {
     font-size: 25px;
     color: #FFFFFF;
 }
-.services-1 a {
+.service-1 a {
+    color: #CF2D3A;
+    font-size: 16px;
+}
+.service-2 {
+    background-color: #3a3939;
+    padding: 35px 25px;
+    margin: 0 10px;
+    border-radius: 15px;
+}
+.service-2 img {
+    margin-bottom: 15px;
+    width: auto;
+    height: 300px;
+    object-fit: contain; /* Recorta la imagen sin distorsión */
+    border-radius: 50%; /* Ejemplo: forma circular */
+    transition: 0.3s; /* Animación suave al pasar el mouse */
+    border: 3px solid #383636; /* Borde rojo */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra */
+}
+.service-2 h3 {
+    font-size: 25px;
+    color: #FFFFFF;
+}
+.service-2 a {
     color: #CF2D3A;
     font-size: 16px;
 }
@@ -236,25 +288,6 @@ hr {
     #menu:checked~.navbar{
         display: initial;
     }
-    .header{
-        min-height: 0vh;
-    }
-    .header-content{
-        padding: 80px 30px 50px 30px;
-    }
-    .header-txt{
-        margin-bottom: 15px;
-    }
-    .header-txt h1{
-        font-size: 90px;
-    }
-    .header-txt p{
-        padding: 0;
-        margin: 15px 0;
-    }
-    .header-dir{
-        flex-direction: column  ;
-    }
     .dir p{
         font-size: 18px;
     }
@@ -291,17 +324,21 @@ hr {
     }
     .footer {
         background-color: #111;
-        color: #fff;
+        color: #141313;
         text-align: center;
         padding: 20px 0;
     }
+    .footer p{
+        color: #0e0d0d;
+    }
+
     .footer a {
-        color: #ccc;
+        color: #700a0a;
         text-decoration: none;
         margin: 0 10px;
     }
     .footer a:hover {
-        color: #fff;
+        color: #830d0d;
     }  
     .menu.navbar ul li{
         width: 100%;
@@ -362,18 +399,5 @@ hr {
     .services-1{
         margin: 0 0 20px 0;
     }
-    .footer {
-        background-color: #111;
-        color: #fff;
-        text-align: center;
-        padding: 20px 0;
-    }
-    .footer a {
-        color: #ccc;
-        text-decoration: none;
-        margin: 0 10px;
-    }
-    .footer a:hover {
-        color: #fff;
-    }  
+
 }
